@@ -31,10 +31,12 @@ namespace MonitoringLibrary
             var usedPhisycalBytes = phisycalBytesAfter - phisycalBytesBefore;
             var usedVirtualBytes = virtualBytesAfter - virtualBytesBefore;
 
+            Console.WriteLine("-------------------------- RESULTS --------------------------");
             Console.WriteLine($"Used {usedPhisycalBytes:N0} phisycal bytes.");
             Console.WriteLine($"Used {usedVirtualBytes:N0} virtual bytes.");
             Console.WriteLine($"Elapsed {stopwatch.Elapsed}");
             Console.WriteLine($"Elapsed {stopwatch.ElapsedMilliseconds} ms");
+            Console.WriteLine("-------------------------------------------------------------");
         }
     }
 }

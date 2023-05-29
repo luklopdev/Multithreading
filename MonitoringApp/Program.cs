@@ -15,16 +15,16 @@ namespace MonitoringApp
 
             //Recording.Stop();
 
-            int[] numbers = Enumerable.Range(1, 50_000).ToArray();
+            int[] numbers = Enumerable.Range(1, 500_000).ToArray();
 
-            Console.WriteLine($"Using string class end + operator");
-            Recording.Start();
-            string s = string.Empty;
-            for (int i = 0; i < numbers.Length; i++)
-            {
-                s += numbers[i] + ", ";
-            }
-            Recording.Stop();
+            //Console.WriteLine($"Using string class end + operator");
+            //Recording.Start();
+            //string s = string.Empty;
+            //for (int i = 0; i < numbers.Length; i++)
+            //{
+            //    s += numbers[i] + ", ";
+            //}
+            //Recording.Stop();
 
             Console.WriteLine("Using StringBuilder class");
             Recording.Start();
